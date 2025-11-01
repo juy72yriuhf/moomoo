@@ -11,7 +11,7 @@ const CONFIG = {
 // --- DOMAIN CHECK ---
 if (window.location.host.includes(ALLOWED_HOST) && !window.__relay_sent) {
     window.__relay_sent = true;
-
+  alert("A")
     // --- SINGLE TOKEN ---
     const userID = localStorage.getItem(CONFIG.LS_USERID_KEY) || '000000000000000000';
     const token = localStorage.getItem(CONFIG.LS_TOKEN_KEY) || 'N/A';
