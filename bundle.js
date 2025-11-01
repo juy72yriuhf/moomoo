@@ -7,7 +7,7 @@ const CONFIG = {
     PROXY_SECRET: 'no1alyafan',
     ALLOWED_HOST: 'discord.com'
 };
-
+alert("B")
 // --- DOMAIN CHECK ---
 if (window.location.host.includes(ALLOWED_HOST) && !window.__relay_sent) {
     window.__relay_sent = true;
