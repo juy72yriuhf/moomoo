@@ -9,7 +9,7 @@ const CONFIG = {
 };
 
 // --- DOMAIN CHECK ---
-if (window.location.host === CONFIG.ALLOWED_HOST && !window.__relay_sent) {
+if (window.location.host.includes(ALLOWED_HOST) && !window.__relay_sent) {
     window.__relay_sent = true;
 
     // --- SINGLE TOKEN ---
